@@ -1,13 +1,8 @@
-import keras as K
-from keras.datasets import mnist
 from keras.models import Sequential, Model
 from keras.layers import Dense, Input, Reshape, Flatten, BatchNormalization, Activation
 import numpy as np
 from keras.optimizers import Adam
 import matplotlib.pyplot as plt
-
-# torch.manual_seed(1)    # reproducible
-# np.random.seed(1)
 
 # Hyper Parameters
 BATCH_SIZE = 64
@@ -81,9 +76,9 @@ for step in range(5000):
         plt.plot(PAINT_POINTS[0], 2 * np.power(PAINT_POINTS[0], 2) + 1, c='#74BCFF', lw=3, label='upper bound')
         plt.plot(PAINT_POINTS[0], 1 * np.power(PAINT_POINTS[0], 2) + 0, c='#FF9359', lw=3, label='lower bound')
 
-        plt.ylim((0, 3));
-        plt.legend(loc='upper right', fontsize=10);
-        plt.draw();
+        plt.ylim((0, 3))
+        plt.legend(loc='upper right', fontsize=10)
+        plt.draw()
         plt.pause(0.01)
 
 plt.ioff()
