@@ -1,6 +1,6 @@
 # Introduction
 This project uses GAN to generate desired curve, which implemented by keras. In [1][2], there are implementations by tensorflow and pytorch
-respectively; this project uses keras. This is one thing i want to mention: in this project, i use different loss function than original paper; see loss function and reasons in [4].
+respectively; this project uses keras. There is one thing i want to mention: in this project, i use different loss function than original paper; see loss function and reasons in [4].
 # Run code
 ```
 python GAN.py
